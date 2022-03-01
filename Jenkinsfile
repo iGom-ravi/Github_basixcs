@@ -5,7 +5,7 @@ pipeline{
         {
           steps{
             echo "artifacts working"
-            archiveArtifacts artifacts: 'output.txt', fingerprint: true
+            archiveArtifacts artifacts: '**/*.war', followSymlinks: false
         }
     }
 }
